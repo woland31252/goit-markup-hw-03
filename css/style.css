@@ -27,17 +27,17 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0px;
+    margin: 0;
 }
 
 ul,
 ol {
-    margin: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding-left: 0;
 }
 
 button {cursor: pointer;
-margin: 0px;}
+margin: 0;}
 address {font-style: normal;}
 
 img {
@@ -66,14 +66,11 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 /*------header---------*/
 .logotipe {
-    width: 145px;
-    margin-top: 24px;
-    margin-bottom: 25px;
     margin-right: 93px;
 }
 .logo {font-family: var(--second-font);
@@ -109,7 +106,7 @@ body {
     color: var(--header-link);}
 
 .header-list {
-    width: 281;
+    width: 281px;
     display: flex;
     gap: 50px;
 }
@@ -135,7 +132,10 @@ body {
 
 
 /* --------HERO---------- */
-.hero {background-color: var(--hero-backgroud);}
+.hero {background-color: var(--hero-backgroud);
+padding: 200px 0;
+text-align: center;}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -145,38 +145,27 @@ body {
     text-transform: uppercase;
     color: var(--main-color);
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    width: 696px;
 
 }
     
 
 .hero-button {
-    /* cursor: pointer; */
     background-color: var(--button-color);
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: var(--first-font-size);
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-color);
     border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
     
-}
-
-.hero-container {
-    display: flex;
-}
-
-.hero-content {
-   
-    padding: 200px 237px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* ----------advanteges--------- */
@@ -227,7 +216,7 @@ body {
     line-height: 1.17;
     text-align: center;
     color: var(--second-title-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .work {
@@ -255,20 +244,16 @@ body {
     line-height: 1.17;
     text-align: center;
     color: var(--second-title-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .command-list {
     display: flex;
     gap: 30px;
-    
 }
 
 .command-item {
-    display: flex;
-    flex-direction: column;
     width: 270px;
-    /* height: 368px; */
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -276,10 +261,6 @@ body {
 }
 
 .command-card {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    gap: 10px;
     padding: 30px 0;
 }
 .command-name {
@@ -287,6 +268,7 @@ body {
     font-size: var(--first-font-size);
     line-height: var(--typical-lh);
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .command-position {
@@ -296,28 +278,23 @@ body {
     color: var(--text-color);}
 
 /* -----------footer--------------- */
-.footer {background: var(--footer-background);}
+.footer {background: var(--footer-background);
+padding: 60px 0;
+}
 .footer-list {
-    /* font-style: normal; */
     line-height: 1.71;
-    width: 231px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-}
-.footer-logotipe {
-    width: 145px;
-    margin: 60px 0 20px;
+.adress {
+    margin-top: 20px;
 }
 
 .footer-adress {
     color: var(--footer-adresscolor);}
+
+.footer-item {
+    margin-bottom: 9px;
+}
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);}
@@ -326,6 +303,7 @@ body {
 
 .header-portfolio {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
+    padding: 24px 0 25px;
 }
 
 .section-portfolio {
@@ -333,7 +311,6 @@ body {
 }
 
 .btn {
-    /* cursor: pointer; */
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -377,6 +354,7 @@ body {
 
 .galery-card {
    border: 1px solid rgba(238, 238, 238, 1);
+   padding: 24px 20px;
 }
 
 .galery-title {
@@ -384,12 +362,12 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--thrid-title-color);
-    padding: 24px 20px 4px;
+    margin-bottom: 4px;
 }
 
 .galery-item {
-    width: 370px;
-    width: calc((100% - 60) / 3);
+    /* width: 370px; */
+    width: calc((100% - 60px) / 3);
 }
 
 .galery-text {
