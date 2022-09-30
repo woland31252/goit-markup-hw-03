@@ -17,8 +17,7 @@
         --thrid-title-color: #212121;
         --text-color: #757575;
         --typical-lh: 1.19;
-        
-            }
+}
 
 p,
 h1,
@@ -69,6 +68,9 @@ body {
     margin: 0 auto;
 }
 
+.section {
+    padding: 94px 0;
+}
 /*------header---------*/
 .logotipe {
     margin-right: 93px;
@@ -128,9 +130,6 @@ body {
 .header-link:focus {
     color: var(--accent-color);}
 
-
-
-
 /* --------HERO---------- */
 .hero {background-color: var(--hero-backgroud);
 padding: 200px 0;
@@ -183,9 +182,6 @@ text-align: center;}
     overflow: hidden;
 }
 
-.advanteges {
-    padding: 94px 0;
-}
 .advanteges-list {
     display: flex;
     gap: 30px;
@@ -220,7 +216,7 @@ text-align: center;}
 }
 
 .work {
-    padding-bottom: 94px;
+    padding: 0 0 94px;
 }
 
 .work-list {
@@ -231,12 +227,9 @@ text-align: center;}
     width: calc((100% - 60px) / 3);
 }
 
-
-
 /* -------------command----------- */
 .command {
     background-color: var(--command-backgroud);
-    padding: 94px 0;
 }
 
 .command-title {
@@ -296,6 +289,10 @@ padding: 60px 0;
     margin-bottom: 9px;
 }
 
+.footer-item:last-child {
+    margin: 0;
+}
+
 .footer-link {
     color: rgba(255, 255, 255, 0.6);}
 
@@ -304,10 +301,6 @@ padding: 60px 0;
 .header-portfolio {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     padding: 24px 0 25px;
-}
-
-.section-portfolio {
-    padding: 94px 0;
 }
 
 .btn {
@@ -334,7 +327,7 @@ padding: 60px 0;
 .button-list {
     justify-content: center;
     gap: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .button-title {
@@ -346,7 +339,6 @@ padding: 60px 0;
 }
 
 .galery-list {
-    display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
@@ -366,7 +358,6 @@ padding: 60px 0;
 }
 
 .galery-item {
-    /* width: 370px; */
     width: calc((100% - 60px) / 3);
 }
 
@@ -374,6 +365,6 @@ padding: 60px 0;
     font-size: var(--first-font-size);
     line-height: 1.88;
     color: var(--text-color);
-    padding: 0 24px 20px;
+
 }
 
